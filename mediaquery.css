@@ -1,0 +1,140 @@
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .header.sticky {
+        padding: 10px 20px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .toggle {
+        background: url(./images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        z-index: 11;
+    }
+
+    .toggle.active {
+        background: url(./images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: invert(1);
+    }
+
+    .nav.active {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: #fff;
+    }
+
+    .nav.active li {
+        margin: 15px 30px;
+    }
+
+    .nav.active li a{
+        color: #333;
+        font-size: 3rem;
+    }
+
+    .nav.active a::after.ac{
+        content: '';
+        height: 1.6px;
+        width: 0%;
+        background-color: #333;
+        display: block;
+        transition: .5s ease-in-out;
+    }
+    
+    .nav.active a:hover::after{
+        content: '';
+        height: 1.6px;
+        width: 100%;
+        background-color: #333;
+        display: block;
+    }
+
+    .header.sticky .toggle {
+        filter: invert(1);
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+    }
+
+    .banner .content {
+        margin: 0;
+        max-width: 350px;
+    }
+
+    .banner .content .contentBox {
+        line-height: 2rem;
+    }
+
+    .banner .content .contentBox h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .banner .content .contentBox a {
+        padding: 10px 20px;
+    }
+
+    .about {
+        background-size: auto;
+    }
+
+    .about .aboutContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 30px;
+        height: 100vh;
+    }
+
+    .posts .postsTitle {
+        padding-top: 100px;
+    }
+
+    .contact {
+        margin-top: 50px;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .contact .title {
+        padding-top: 120px;
+    }
+
+    .contact .contactForm {
+        margin: 40px 10px 20px;
+    }
+
+    .contact .contactForm input, .contact .contactForm textarea {
+        margin-bottom: 5px;
+    }
+
+    .contact .mediaContainer a img {
+        transform: scale(0.7);
+    }
+}    

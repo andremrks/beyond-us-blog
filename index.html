@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="splide.min.css">
+    <script src="splide.min.js"></script>
+    <title>Beyond Us - Blog</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="name" onclick="toggleMenu();">Beyond Us</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="nav">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About us</a></li>
+            <li><a href="#posts" onclick="toggleMenu();">Posts</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="home">
+        <div class="content">
+            <div class="contentBox">
+                <h1>The Universe Beyond Our View</h1>
+                <a href="#about">About us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="aboutContent">
+            <div class="aboutText">
+                <h1 class="titleText">About us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="posts" id="posts">
+        <div class="postsTitle">
+            <h2 class="titleText">Posts</h2>
+            <p>Here you can find everything we know about our Universe.</p>
+        </div>
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="postsContent">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="box">
+                                <div class="imgBox">
+                                    <img src="./images/sun.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>What is the sun?</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="box">
+                                <div class="imgBox">
+                                    <img src="./images/aurora.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>Aurora Borealis</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="box">
+                                <div class="imgBox">
+                                    <img src="./images/astronaut.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>The moon</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="box">
+                                <div class="imgBox">
+                                    <img src="./images/black-hole.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>Black Hole</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="box">
+                                <div class="imgBox">
+                                    <img src="./images/james-webb-pic.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>New Universe Pics</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="box">
+                                <div class="imgBox">
+                                    <img src="./images/james-webb.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>James Webb</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="box">
+                                <div class="imgBox">
+                                    <img src="./images/galaxy.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>Galaxies</h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText">Get in touch</h2>
+            <p>If you are a marcian and want to talk about universe secrets, contact us.</p>
+        </div>
+        <div class="contactForm">
+            <div class="row">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Contact Phone">
+            <div class="row2">
+                <textarea placeholder="Message" class="msg"></textarea>
+            </div>
+            <div class="row2">
+                <input type="submit" value="Send" class="btn">
+            </div>
+        </div>
+        <div class="mediaContainer">
+            <div class="medias">
+                <a href=""><img src="./images/instagram.png" alt=""></a>
+                <a href=""><img src="./images/facebook.png" alt=""></a>
+                <a href=""><img src="./images/twitter.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footerContent">
+            <p>Copyright © 2022 <a href="https://andremrks.carrd.co/" target="_blank">André Marques</a> All Right Reserved</p>
+        </div>
+    </footer>
+
+    <script src="./functions.js"></script>
+</body>
+</html>
