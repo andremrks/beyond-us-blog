@@ -116,6 +116,15 @@
         padding-top: 100px;
     }
 
+    .posts .slider-container {
+        width: 90%;
+        height: 400px;
+    }
+
+    .posts .slider-container .slide {
+        margin: 0;
+    }
+
     .contact {
         margin-top: 50px;
         height: 100vh;
